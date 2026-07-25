@@ -4,36 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ពិធីបោះបាច់ផ្កាមង្គល (Flower Tossing) - Wedding Blessing</title>
+    
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Moul&family=Hanuman:wght@400;700&family=Freehand&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Side-by-Side Dual Column Layout */
-        .dual-invitation-wrapper {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 20px;
-            width: 100%;
-            max-width: 1240px;
-            margin: 0 auto;
-        }
-
-        .invitation-container {
-            flex: 1;
-            max-width: 600px;
-        }
-
-        /* Responsive adaptation for smaller screens */
-        @media (max-width: 900px) {
-            .dual-invitation-wrapper {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
 </head>
 <body>
 
@@ -86,40 +62,40 @@
                 </p>
             </div>
             
-            <!-- Ceremony Detailed Timeline Section -->
+            <!-- Khmer Flower Tossing Timeline Section -->
             <div class="program-wrapper">
-                <button class="btn-program-toggle btn-toggle-kh" onclick="toggleProgramKh()">
+                <button type="button" class="btn-flower-toss-toggle" onclick="toggleFlowerTossKh()">
                     📋 សូមចុចទីនេះដើម្បីមើលកម្មវិធីបោះបាច់ផ្កាមង្គលលម្អិត
                 </button>
 
-                <div id="weddingTimelineKh" class="timeline-container collapsed">
-                    <h4 class="timeline-main-title">
+                <div id="flowerTossTimelineKh" class="flower-toss-container collapsed">
+                    <h4 class="flower-toss-title">
                         ⏱️ កម្មវិធីពិធីការតាមពេលវេលាកំណត់ (Flower Tossing Timeline)
                     </h4>
 
                     <div class="timeline-item">
-                        <div class="time-badge">០៧:៣០ យប់</div>
+                        <span class="time-badge-flower">០៧:៣០ យប់</span>
                         <div class="timeline-content">
                             <strong>ការអញ្ជើញជួបជុំជុំវិញឆាក៖</strong> ពិធីករប្រកាសផ្អាកការពិសារភោជនីយអាហារជាបណ្តោះអាសន្ន និងគោរពអញ្ជើញមិត្តភក្តិ កំលោះក្រមុំទាំងអស់ មកជួបជុំគ្នានៅមុខឆាកតន្ត្រី។
                         </div>
                     </div>
 
                     <div class="timeline-item highlight-banquet">
-                        <div class="time-badge">០៨:០០ យប់</div>
+                        <span class="time-badge-flower">០៨:០០ យប់</span>
                         <div class="timeline-content">
                             <strong>កិច្ចចាប់ផ្តើមពិធីបោះបាច់ផ្កា៖</strong> គូស្វាមីភរិយាថ្មីឡើងឈរបែរខ្នង រៀបចំត្រៀមបោះបាច់ផ្កាមង្គល (Flower Tossing) ទៅកាន់ហ្វូងមិត្តភក្តិ។
                         </div>
                     </div>
 
                     <div class="timeline-item highlight-banquet">
-                        <div class="time-badge">០៨:១៥ យប់</div>
+                        <span class="time-badge-flower">០៨:១៥ យប់</span>
                         <div class="timeline-content">
                             <strong>ការស្វែងរកអ្នកមានសំណាង៖</strong> ជូនកាដូអនុស្សាវរីយ៍ពិសេស និងប្រសិទ្ធពរជ័យជូនដល់មិត្តភក្តិដែលដណ្តើមបានបាច់ផ្កាសំណាង។
                         </div>
                     </div>
 
                     <div class="timeline-item">
-                        <div class="time-badge">០៨:៣០ យប់</div>
+                        <span class="time-badge-flower">០៨:៣០ យប់</span>
                         <div class="timeline-content">
                             <strong>ញ៉ាំងបរិយាកាសរាំកម្សាន្ត៖</strong> បើកកម្មវិធីរាំលេងកម្សាន្តជុំគ្នា (Dancing Session) ដើម្បីអបអរសាទររាត្រីដ៏មហាស្លាបចក្រនេះ។
                         </div>
@@ -147,7 +123,7 @@
 
 
         <!-- =================================================== -->
-        <!--              RIGHT COLUMN: ENGLISH VERSION          -->
+        <!--               RIGHT COLUMN: ENGLISH VERSION         -->
         <!-- =================================================== -->
         <div class="invitation-container" id="invitation-en">
             <!-- Header Image Decoration -->
@@ -193,40 +169,40 @@
                 </p>
             </div>
             
-            <!-- Ceremony Detailed Timeline Section -->
+            <!-- English Flower Tossing Timeline Section -->
             <div class="program-wrapper">
-                <button class="btn-program-toggle btn-toggle-en" onclick="toggleProgramEn()">
+                <button type="button" class="btn-flower-toss-toggle" onclick="toggleFlowerTossEn()">
                     📋 Click here to view detailed Flower Tossing program
                 </button>
 
-                <div id="weddingTimelineEn" class="timeline-container collapsed">
-                    <h4 class="timeline-main-title">
+                <div id="flowerTossTimelineEn" class="flower-toss-container collapsed">
+                    <h4 class="flower-toss-title">
                         ⏱️ Flower Tossing Program Schedule
                     </h4>
 
                     <div class="timeline-item">
-                        <div class="time-badge">07:30 PM</div>
+                        <span class="time-badge-flower">07:30 PM</span>
                         <div class="timeline-content">
                             <strong>Guest Gathering at the Stage:</strong> The MC announces a brief pause in dinner and invites all single friends to gather in front of the main stage.
                         </div>
                     </div>
 
                     <div class="timeline-item highlight-banquet">
-                        <div class="time-badge">08:00 PM</div>
+                        <span class="time-badge-flower">08:00 PM</span>
                         <div class="timeline-content">
                             <strong>Flower Tossing Kick-off:</strong> The newlyweds turn their backs to the crowd and prepare to toss the lucky bouquet.
                         </div>
                     </div>
 
                     <div class="timeline-item highlight-banquet">
-                        <div class="time-badge">08:15 PM</div>
+                        <span class="time-badge-flower">08:15 PM</span>
                         <div class="timeline-content">
                             <strong>Winner Announcement:</strong> Presentation of special souvenirs and warm blessings to the friend who catches the bouquet.
                         </div>
                     </div>
 
                     <div class="timeline-item">
-                        <div class="time-badge">08:30 PM</div>
+                        <span class="time-badge-flower">08:30 PM</span>
                         <div class="timeline-content">
                             <strong>Dancing Session:</strong> Opening of the dance floor for everyone to celebrate and enjoy the rest of the evening.
                         </div>
@@ -237,7 +213,7 @@
             <!-- Location Section -->
             <div class="location-section">
                 <span class="location-title">Venue Location:</span>
-                <span class="location-name">5-Star Restaurant ហួ កំាង</span>
+                <span class="location-name">5-Star Restaurant Hou Kaing</span>
                 <span class="location-sub">(Muk Kampool Branch, Kandal Province, Kingdom of Cambodia)</span>
             </div>
 
