@@ -1,19 +1,24 @@
+/* =================================================== */
+/*                    SCRIPT_EN.JS                     */
+/*                  (English Version)                  */
+/* =================================================== */
+
 /**
- * Interactive UI Logic
- * Handles interactive timeline, scroll behavior, and navigation elements.
+ * Core User Interface Control Logic
+ * Handles interactive timeline, smooth scroll, and buttons.
  */
 
-// --- 1. Timeline Toggle Logic ---
+// --- 1. Timeline Display Control (Toggle Logic) ---
 function toggleProgram() {
     const timeline = document.getElementById('eventTimeline');
     const toggleBtn = document.querySelector('.btn-program-toggle');
     
     if (!timeline) return;
 
-    // Toggle the 'collapsed' class
+    // Toggle the 'collapsed' visibility state
     const isCollapsed = timeline.classList.toggle('collapsed');
     
-    // Update button text conditionally
+    // Dynamically update button label
     if (isCollapsed) {
         toggleBtn.innerHTML = '📋 Click here to view detailed program';
     } else {
@@ -21,10 +26,10 @@ function toggleProgram() {
     }
 }
 
-// --- 2. Scroll to Top Button Logic ---
+// --- 2. Scroll to Top Behavior ---
 const scrollTopBtn = document.getElementById('scrollTopBtn');
 
-// Monitor page scrolling to dynamically display the button
+// Track viewport scrolling position
 window.onscroll = function() {
     handleScrollBehavior();
 };
@@ -32,16 +37,14 @@ window.onscroll = function() {
 function handleScrollBehavior() {
     if (!scrollTopBtn) return;
     
-    // Show button if page is scrolled past 300px from the top
+    // Display button when scrolled past 300px threshold
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         scrollTopBtn.style.display = "block";
-        // Small delay to let opacity transition work if defined in your CSS
         setTimeout(() => {
             scrollTopBtn.style.opacity = "1";
         }, 10);
     } else {
         scrollTopBtn.style.opacity = "0";
-        // Match CSS transition time before setting display to none
         setTimeout(() => {
             if (scrollTopBtn.style.opacity === "0") {
                 scrollTopBtn.style.display = "none";
@@ -50,7 +53,7 @@ function handleScrollBehavior() {
     }
 }
 
-// Smooth scroll to the top function triggered by the button action
+// Smooth scroll to top execution
 function scrollToTop() {
     window.scrollTo({
         top: 0,
@@ -58,7 +61,7 @@ function scrollToTop() {
     });
 }
 
-// --- 3. External System & Map Navigation ---
+// --- 3. External Links & Navigation ---
 function openAiSystem() {
     window.open("https://tharahuokaing.github.io/ai/", "_blank");
 }
