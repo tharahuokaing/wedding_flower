@@ -1,7 +1,10 @@
-/* Base Style Setup */
+/* =================================================== */
+/*                   BASE SETUP                        */
+/* =================================================== */
+
 body {
     font-family: 'Hanuman', sans-serif;
-    background-color: #faf6f0; /* ពណ៌ផ្ទៃខាងក្រោយស្រទន់ បែបស្រស់ស្រាយ */
+    background-color: #faf6f0; /* Soft, warm background color */
     margin: 0;
     padding: 20px 10px;
     display: flex;
@@ -14,7 +17,7 @@ body {
     background: #ffffff;
     max-width: 600px;
     width: 100%;
-    border: 2px solid #e5a93b; /* ពណ៌មាសទាក់ទាញ */
+    border: 2px solid #e5a93b; /* Attractive gold border */
     border-radius: 15px;
     padding: 25px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
@@ -22,10 +25,13 @@ body {
     box-sizing: border-box;
 }
 
-/* Typography Rules */
+/* =================================================== */
+/*                 TYPOGRAPHY RULES                    */
+/* =================================================== */
+
 .title-moul {
     font-family: 'Moul', sans-serif;
-    color: #b32424; /* ពណ៌ក្រហមមង្គលចម្បង */
+    color: #b32424; /* Primary auspicious red */
     font-size: 19px;
     line-height: 1.7;
     margin: 20px 0;
@@ -34,7 +40,7 @@ body {
 .parents-section-title {
     font-family: 'Moul', sans-serif;
     font-size: 15px;
-    color: #333;
+    color: #333333;
     margin-bottom: 12px;
 }
 
@@ -57,14 +63,14 @@ body {
 
 .parent-names {
     font-weight: bold;
-    color: #111;
+    color: #111111;
 }
 
 .ceremony-text {
     font-size: 15px;
     line-height: 1.8;
     text-align: justify;
-    color: #444;
+    color: #444444;
 }
 
 .honorific-highlight {
@@ -72,7 +78,10 @@ body {
     font-weight: bold;
 }
 
-/* Couple Info Style */
+/* =================================================== */
+/*                 COUPLE INFORMATION                  */
+/* =================================================== */
+
 .couple-container {
     background: #fffcf7;
     border: 1px dashed #e5a93b;
@@ -83,7 +92,7 @@ body {
 
 .couple-label {
     font-size: 13px;
-    color: #666;
+    color: #666666;
 }
 
 .couple-name {
@@ -101,37 +110,43 @@ body {
     margin: 4px 0;
 }
 
-/* Date and Time Layout */
+/* =================================================== */
+/*                DATE & TIME LAYOUT                   */
+/* =================================================== */
+
 .datetime-section {
     margin: 20px 0;
 }
 
 .datetime-title {
     font-family: 'Moul', sans-serif;
-    color: #333;
+    color: #333333;
     font-size: 14px;
 }
 
 .datetime-date {
     font-size: 16px;
-    color: #222;
+    color: #222222;
     line-height: 1.6;
 }
 
 .lunar-date {
     font-size: 13px;
-    color: #666;
+    color: #666666;
     font-style: italic;
 }
 
-/* Timeline/Program Control */
+/* =================================================== */
+/*             TIMELINE & PROGRAM CONTROL              */
+/* =================================================== */
+
 .program-wrapper {
     margin: 25px 0;
 }
 
 .btn-program-toggle {
     background: #b32424;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 25px;
     padding: 12px 25px;
@@ -140,7 +155,7 @@ body {
     font-weight: bold;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(179, 36, 36, 0.15);
-    transition: background 0.3s;
+    transition: background 0.3s ease;
     width: 100%;
 }
 
@@ -148,11 +163,12 @@ body {
     background: #911b1b;
 }
 
+/* Smooth expandable/collapsible container */
 .timeline-container {
     max-height: 1500px;
     opacity: 1;
     overflow: hidden;
-    transition: max-height 0.5s ease-out, opacity 0.4s ease;
+    transition: max-height 0.5s ease-in-out, opacity 0.4s ease, padding 0.4s ease;
     margin-top: 20px;
     text-align: left;
     background: #fffdfa;
@@ -165,12 +181,13 @@ body {
     opacity: 0;
     padding-top: 0;
     padding-bottom: 0;
+    margin-top: 0;
 }
 
 .timeline-main-title {
     font-family: 'Moul', sans-serif;
     font-size: 13px;
-    color: #444;
+    color: #444444;
     margin-bottom: 15px;
 }
 
@@ -182,7 +199,7 @@ body {
 
 .time-badge {
     background: #e5a93b;
-    color: #fff;
+    color: #ffffff;
     font-size: 12px;
     font-weight: bold;
     padding: 3px 8px;
@@ -193,7 +210,7 @@ body {
 
 .timeline-content {
     font-size: 14px;
-    color: #333;
+    color: #333333;
     line-height: 1.6;
 }
 
@@ -203,7 +220,10 @@ body {
     border-radius: 5px;
 }
 
-/* Location Area */
+/* =================================================== */
+/*                 LOCATION SECTION                    */
+/* =================================================== */
+
 .location-section {
     margin-top: 25px;
 }
@@ -211,7 +231,7 @@ body {
 .location-title {
     display: block;
     font-size: 14px;
-    color: #555;
+    color: #555555;
 }
 
 .location-name {
@@ -224,25 +244,31 @@ body {
 
 .location-sub {
     font-size: 13px;
-    color: #666;
+    color: #666666;
 }
 
 .blessing {
     font-size: 14px;
     line-height: 1.8;
-    color: #444;
+    color: #444444;
     margin: 20px 0;
     font-style: italic;
 }
 
-/* Graphics Wrappers */
+/* =================================================== */
+/*                 GRAPHICS & MEDIA                    */
+/* =================================================== */
+
 .khmer-sticker-header img,
 .khmer-sticker-footer img {
     max-width: 100%;
     height: auto;
 }
 
-/* Footer Section Rules */
+/* =================================================== */
+/*                  FOOTER SECTION                     */
+/* =================================================== */
+
 footer {
     margin-top: 30px;
     text-align: center;
@@ -254,12 +280,15 @@ footer {
 
 footer p {
     font-size: 13px;
-    color: #666;
+    color: #666666;
     line-height: 1.8;
     margin: 5px 0;
 }
 
-/* Scroll To Top Action Trigger Style */
+/* =================================================== */
+/*               SCROLL TO TOP BUTTON                  */
+/* =================================================== */
+
 #scrollTopBtn {
     display: none;
     position: fixed;
@@ -267,51 +296,29 @@ footer p {
     right: 20px;
     z-index: 999;
     background: #b32424;
-    color: white;
+    color: #ffffff;
     border: none;
     padding: 10px 15px;
     border-radius: 50px;
     font-family: 'Hanuman', sans-serif;
     font-size: 12px;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
 }
 
 #scrollTopBtn:hover {
-    background: #222;
+    background: #222222;
 }
 
-/* Mobile Responsive Adaptive Layer */
+/* =================================================== */
+/*             MOBILE RESPONSIVE ADAPTATION            */
+/* =================================================== */
+
 @media (max-width: 480px) {
     .parents-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
 }
-
-/* Smooth Collapse Example for .timeline-container */
-.timeline-container {
-    max-height: 1500px; /* Adjust based on your content height */
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out, opacity 0.4s ease;
-    opacity: 1;
-}
-
-.timeline-container.collapsed {
-    max-height: 0;
-    opacity: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-/* Smooth Fade-in for Scroll Button */
-#scrollTopBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-        }
-    
