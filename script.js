@@ -17,7 +17,7 @@ function toggleProgram() {
     if (isCollapsed) {
         toggleBtn.innerHTML = '📋 សូមចុចទីនេះដើម្បីមើលកម្មវិធីបោះបាច់ផ្កាមង្គលលម្អិត';
     } else {
-        toggleBtn.innerHTML = '✨ សូមចុចទីនេះដើម្បីលាក់កម្មវិធីពិធីការលម្អិត';
+        toggleBtn.innerHTML = '✨ សូមចុចទីនេះដើម្បីបិទកម្មវិធីពិធីការលម្អិត';
     }
 }
 
