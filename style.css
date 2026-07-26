@@ -460,3 +460,33 @@ footer p {
     margin-right: 12px;
     white-space: nowrap;
 }
+
+.flower-toss-container {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.6s ease;
+}
+
+.flower-toss-container:not(.collapsed) {
+    max-height: 2000px;
+}
+
+.btn-flower-toss-toggle {
+    width: 100%;
+    padding: 14px 18px;
+    background: linear-gradient(135deg, #c62828, #f9a825);
+    color: #fff;
+    font-family: "Hanuman", serif;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+.btn-flower-toss-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
