@@ -1,5 +1,7 @@
-function toggleFlowerTossKh() {
-    const timeline = document.getElementById("flowerTossTimelineKh");
+function toggleTimeline(id) {
+    const timeline = document.getElementById(id);
+
+    if (!timeline) return;
 
     timeline.classList.toggle("collapsed");
 
@@ -8,4 +10,12 @@ function toggleFlowerTossKh() {
     } else {
         timeline.style.maxHeight = timeline.scrollHeight + "px";
     }
+}
+
+function toggleFlowerTossKh() {
+    toggleTimeline("flowerTossTimelineKh");
+}
+
+function toggleFlowerTossEn() {
+    toggleTimeline("flowerTossTimelineEn");
 }
