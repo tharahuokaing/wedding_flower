@@ -535,3 +535,8 @@ footer p {
     max-height:0;
     opacity:0;
 }
+
+.btn-flower-toss-toggle.active {
+    background: linear-gradient(135deg, #198754, #43c463);
+    color: #fff;
+}
